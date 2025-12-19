@@ -23,5 +23,14 @@
             "}"
         ],
         "description": "for loop template"
+    },
+    "Struct": {
+        "prefix": ["struct"],
+        "body": [
+            "struct ${1:Name} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Struct template"
     }
 }
