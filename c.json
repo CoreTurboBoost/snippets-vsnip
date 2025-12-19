@@ -32,5 +32,10 @@
             "}"
         ],
         "description": "Struct template"
+    },
+    "typedef": {
+        "prefix": ["typedef"],
+        "body": [ "typedef ${1:Type} ${2:Type_t}$0" ],
+        "description": "Typedef template"
     }
 }
