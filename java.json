@@ -1,4 +1,13 @@
 {
+    "main function": {
+        "prefix": ["main"],
+        "body": [
+            "public static void main(String[] args) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Expand to main function, entry point"
+    },
     "Class": {
         "prefix": ["class"],
         "body": [
