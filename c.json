@@ -13,7 +13,7 @@
         "body": [
             "printf(\"${1:format}\");"
         ],
-        "description": "printf function template."
+        "description": "Snippet for printf"
     },
     "for i loop": {
         "prefix": ["fori"],
