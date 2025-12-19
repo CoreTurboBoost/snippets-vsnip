@@ -6,7 +6,7 @@
             "\t$1",
             "}"
         ],
-        "description": "main function template."
+        "description": "main function template"
     },
     "function printf": {
         "prefix": ["printf"],
