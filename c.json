@@ -1,0 +1,26 @@
+{
+    "main function": {
+        "prefix": ["main"],
+        "body": [
+            "int main(int argc, char* argv[]) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "main function template."
+    },
+    "function printf": {
+        "prefix": ["printf"],
+        "body": [
+            "printf(\"${1:format}\");"
+        ],
+        "description": "printf function template."
+    },
+    "for i loop": {
+        "prefix": ["fori"],
+        "body": [
+            "for (${1:type} ${2:var}; ${2:var} < ${3:max_iter}; ${2:var}++) {",
+            "\t$4",
+            "}"
+        ]
+    }
+}

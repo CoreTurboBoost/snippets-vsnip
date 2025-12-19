@@ -1,0 +1,73 @@
+{
+    "Class": {
+        "prefix": ["class"],
+        "body": [
+            "${1|public,private,protected|} class $TM_FILENAME_BASE {",
+            "\t$TM_FILENAME_BASE(${3:args}) {",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ],
+        "description": "Expand to class definition"
+    },
+    "Class-with-members": {
+        "prefix": ["classm"],
+        "body": [
+            "${1|public,private,protected|} class $TM_FILENAME_BASE {",
+            "\t$TM_FILENAME_BASE(${3:args}) {",
+            "\t\t$0",
+            "\t}",
+            "",
+            "\t$4",
+            "}"
+        ],
+        "description": "Expand to class definition"
+    },
+    "Optional": {
+        "prefix": ["Optional"],
+        "body": [
+            "Optional<${1:Type}> $0"
+        ],
+        "description": "Wrap in Optinoal type"
+    },
+    "if isPresent": {
+        "prefix": ["ifisPresent"],
+        "body": [
+            "if (${1:optional_var}.isPresent()) {",
+            "\t$0",
+            "}"
+        ],
+        "description": ".isPresent() for Types wrapped in Optional"
+    },
+    "if isEmpty": {
+        "prefix": ["ifisEmpty"],
+        "body": [
+            "if (${1:optional_var}.isEmpty()) {",
+            "\t$0",
+            "}"
+        ],
+        "description": ".isEmpty() for Types wrapped in Optional"
+    },
+    ".get()": {
+        "prefix": ["get"],
+        "body": [
+            "${1:optional_var}.get()$0"
+        ],
+        "description": ".get() on Optional type"
+    },
+    ".orElse()": {
+        "prefix": ["orElse"],
+        "body": [
+            "${1:optional_var}.orElse(${2:other})$0"
+        ],
+        "description": ".orElse() on Optional type"
+    },
+    "for index": {
+        "prefix": ["for"],
+        "body": [
+            "for (${1:Type} ${2:iter_var} = ${3:0}; ${2:iter_var} < ${4:upper_limit}; ${2:iter_var}++) {",
+            "\t$0",
+            "}"
+        ]
+    }
+}
